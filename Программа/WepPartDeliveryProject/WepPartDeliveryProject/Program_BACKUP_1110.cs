@@ -43,6 +43,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+<<<<<<< HEAD
+=======
+
 
 app.Map("/time", appBuilder =>
 {
@@ -73,4 +76,5 @@ app.Map("/delivary", appBuilder =>
 });
 
 
+>>>>>>> DeliveryManRole
 app.Run();

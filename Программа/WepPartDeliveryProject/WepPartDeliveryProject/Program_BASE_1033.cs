@@ -13,8 +13,7 @@ var Configuration = builder.Configuration;
 
 // Register application setting using IOption provider mechanism
 services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
-services.AddTransient<SomeClass>(services.BuildServiceProvider());
-services.AddTransient<SomeOtherClass>(services.BuildServiceProvider());
+
 // Fetch settings object from configuration
 var settings = new ApplicationSettings();
 Configuration.GetSection("ApplicationSettings").Bind(settings);
@@ -44,6 +43,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 
+
 app.Map("/time", appBuilder =>
 {
     var time = DateTime.Now.ToShortTimeString();
@@ -57,20 +57,5 @@ app.Map("/time", appBuilder =>
 
     appBuilder.Run(async context => await context.Response.WriteAsync($"Time: {time}"));
 });
-
-app.Map("/delivary", appBuilder =>
-{
-    var time = DateTime.Now.ToShortTimeString();
-
-    // логгируем данные - выводим на консоль приложения
-    appBuilder.Use(async (context, next) =>
-    {
-        Console.WriteLine($"Time: {time}");
-        await next();   // вызываем следующий middleware
-    });
-
-    appBuilder.Run(async context => await context.Response.WriteAsync($"Time: {time}"));
-});
-
 
 app.Run();
