@@ -13,7 +13,8 @@ var Configuration = builder.Configuration;
 
 // Register application setting using IOption provider mechanism
 services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
-
+services.AddTransient<SomeClass>(services.BuildServiceProvider());
+services.AddTransient<SomeOtherClass>(services.BuildServiceProvider());
 // Fetch settings object from configuration
 var settings = new ApplicationSettings();
 Configuration.GetSection("ApplicationSettings").Bind(settings);
