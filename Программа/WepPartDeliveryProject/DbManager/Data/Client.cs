@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DbManager.Data
 {
-    public class Person:IModel
+    public class Client : Person
     {
-        public string Name { get; set; }
-        public DateTime Born { get; set; }
+        
     }
 }

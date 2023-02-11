@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace DbManager.Data
 {
-    public class Person:IModel
+    internal class Dish : IModel
     {
         public string Name { get; set; }
-        public DateTime Born { get; set; }
+        public string Description { get; set; }
+        public double Price { get; set; }
+        public string PathToMainImage { get; set; }
     }
 }

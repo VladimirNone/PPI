@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DbManager.Data
 {
-    public class Person:IModel
+    public class Order:IModel
     {
-        public string Name { get; set; }
-        public DateTime Born { get; set; }
+        public double Price { get; set; }
+        public List<OrderedObject> OrderedObjects { get; set; }
+        public Person
     }
 }
