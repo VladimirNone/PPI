@@ -7,6 +7,8 @@ namespace DbManager.Data.Nodes
     {
         public float Bonuses { get; set; }
 
+        public string Some { get; set; } = "Какая-то осознанная чушь";
+
         [JsonIgnore]
         public List<Ordered>? ClientOrders { get; set; }
     }
