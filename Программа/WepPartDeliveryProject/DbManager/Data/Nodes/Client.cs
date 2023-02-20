@@ -11,6 +11,7 @@ namespace DbManager.Data.Nodes
         public string Some1 { get; set; } = "Какая-то осознанная чушь 1";
         public string Some2 { get; set; } = "Какая-то осознанная чушь 2";
         public string Some3 { get; set; } = "Какая-то осознанная чушь 3";
+        public string Some4 { get; set; } = "Какая-то осознанная чушь 4";
 
         [JsonIgnore]
         public List<Ordered>? ClientOrders { get; set; }
