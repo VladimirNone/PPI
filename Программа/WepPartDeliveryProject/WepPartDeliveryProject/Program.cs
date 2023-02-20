@@ -18,7 +18,6 @@ var settings = new ApplicationSettings();
 configuration.GetSection("ApplicationSettings").Bind(settings);
 
 services.AddDbInfrastructure(settings);
-services.AddHealthChecks().AddCheck<GraphHealthCheck>("GraphHealthCheck");
 
 
 var app = builder.Build();
@@ -40,8 +39,6 @@ app.UseSwaggerUI(options =>
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
-app.UseHealthChecks("/healthcheck");
 
 app.UseRouting();
 
