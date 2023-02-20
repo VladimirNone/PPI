@@ -50,5 +50,10 @@ namespace DbManager.Neo4j.Implementations
         {
             throw new NotImplementedException();
         }
+
+        public void CreateSomething()
+        {
+
+        }
     }
 }
