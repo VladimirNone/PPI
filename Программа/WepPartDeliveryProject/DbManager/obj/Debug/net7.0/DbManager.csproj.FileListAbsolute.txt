@@ -10,3 +10,4 @@ E:\University\Диплом\WepPartDeliveryProject\DbManager\obj\Debug\net7.0\DbM
 E:\University\Диплом\WepPartDeliveryProject\DbManager\obj\Debug\net7.0\refint\DbManager.dll
 E:\University\Диплом\WepPartDeliveryProject\DbManager\obj\Debug\net7.0\DbManager.pdb
 E:\University\Диплом\WepPartDeliveryProject\DbManager\obj\Debug\net7.0\ref\DbManager.dll
+E:\University\Диплом\WepPartDeliveryProject\DbManager\bin\Debug\net7.0\Doc.xml

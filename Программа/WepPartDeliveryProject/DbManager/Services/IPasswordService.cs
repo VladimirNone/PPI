@@ -1,6 +1,9 @@
 ﻿
 namespace DbManager.Services
 {
+    /// <summary>
+    /// Service for generate argon2i hash
+    /// </summary>
     public interface IPasswordService
     {
         /// <summary>

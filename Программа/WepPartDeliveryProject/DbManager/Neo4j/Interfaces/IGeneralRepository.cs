@@ -2,6 +2,10 @@
 
 namespace DbManager.Neo4j.Interfaces
 {
+    /// <summary>
+    /// General interface for repository
+    /// </summary>
+    /// <typeparam name="TNode"></typeparam>
     public interface IGeneralRepository<TNode> where TNode : INode
     {
         /// <summary>
